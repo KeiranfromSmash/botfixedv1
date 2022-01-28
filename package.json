@@ -1,0 +1,24 @@
+{
+    "dependencies": {
+        "@discordjs/builders": "^0.11.0",
+        "@discordjs/opus": "^0.7.0",
+        "@discordjs/rest": "^0.2.0-canary.0",
+        "@discordjs/voice": "^0.8.0",
+        "axios": "^0.25.0",
+        "discord-api-types": "^0.26.1",
+        "discord.js": "^13.5.1",
+        "libsodium-wrappers": "^0.7.9",
+        "node-opus": "^0.3.3",
+        "opusscript": "0.0.8"
+    },
+    "scripts": {
+        "registerslashcommands": "node gen-slash.js",
+        "start": "node ."
+    },
+    "name": "botfixedv1",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/keiransdomains/Botfixedv1.git",
+    "author": "Keiran chippendale, This bot was fixed by keiran and the original maker was Dillix#2007",
+    "license": "GNU General Public License v3.0"
+}
