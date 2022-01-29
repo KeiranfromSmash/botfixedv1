@@ -13,7 +13,7 @@ const { joinVoiceChannel, createAudioPlayer, createAudioResource, createReadStre
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('paradise')
-        .setDescription('Plays Paradsie in your current voice channel!'),
+        .setDescription('Plays Paradise in your current voice channel!'),
     async execute(interaction) {
         if (!interaction.member.voice.channelId) {
             return interaction.reply({ content: `You are not connected to a voice channel.`, ephemeral: true })
@@ -43,14 +43,14 @@ module.exports = {
 
         const Embed = new MessageEmbed()
             .setColor('BLACK')
-            .setDescription(`Paradsie 24/7`)
-            .setFooter('itsParadsie.net')
+            .setDescription(`Paradise 24/7`)
+            .setFooter('itsParadise.net')
             .setTimestamp(Date.now())
         const row = new MessageActionRow()
             .addComponents(
                 new MessageButton()
                 .setLabel('🌐 Website')
-                .setURL('https://itsParadsie.net')
+                .setURL('https://itsParadise.net')
                 .setStyle('LINK'),
             );
 
@@ -62,6 +62,6 @@ module.exports = {
             });
 
 
-        await interaction.reply({ content: '**Paradsie** is now playing in your voice channel!', embeds: [Embed], components: [row] })
+        await interaction.reply({ content: '**Paradise** is now playing in your voice channel!', embeds: [Embed], components: [row] })
     },
 };
